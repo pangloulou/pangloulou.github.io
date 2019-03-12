@@ -98,24 +98,28 @@
 
 
 
-  <meta name="description" content="前端 学习记录">
+  <meta name="description" content="需求说明在写文章的时候，我总是不知道该怎么给文章分类或者贴标签，特别纠结，比如我并不想后面所有跟js有关的文章都在一个js类别下，后期如果文章多了的话感觉会很混乱，学习记录和案例练习我希望能够分类清晰，想要达到下面多级分类的效果：  笔记 javascript 文章1   css   Demo javascript 文章2      解决方法网上搜索了一下还真的有实现方法：Hexo主题实现多级分类">
 <meta name="keywords" content="前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DewSpace">
-<meta property="og:url" content="http://manylu.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo添加多级分类">
+<meta property="og:url" content="http://manylu.com/2019/03/12/hexo添加多级分类/index.html">
 <meta property="og:site_name" content="DewSpace">
-<meta property="og:description" content="前端 学习记录">
+<meta property="og:description" content="需求说明在写文章的时候，我总是不知道该怎么给文章分类或者贴标签，特别纠结，比如我并不想后面所有跟js有关的文章都在一个js类别下，后期如果文章多了的话感觉会很混乱，学习记录和案例练习我希望能够分类清晰，想要达到下面多级分类的效果：  笔记 javascript 文章1   css   Demo javascript 文章2      解决方法网上搜索了一下还真的有实现方法：Hexo主题实现多级分类">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007wLihkgy1g0zx32lkjfj30ts0bnmx3.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/007wLihkgy1g0zx5tn94yj308d0ep3z9.jpg">
+<meta property="og:updated_time" content="2019-03-12T05:08:13.047Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DewSpace">
-<meta name="twitter:description" content="前端 学习记录">
+<meta name="twitter:title" content="hexo添加多级分类">
+<meta name="twitter:description" content="需求说明在写文章的时候，我总是不知道该怎么给文章分类或者贴标签，特别纠结，比如我并不想后面所有跟js有关的文章都在一个js类别下，后期如果文章多了的话感觉会很混乱，学习记录和案例练习我希望能够分类清晰，想要达到下面多级分类的效果：  笔记 javascript 文章1   css   Demo javascript 文章2      解决方法网上搜索了一下还真的有实现方法：Hexo主题实现多级分类">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/007wLihkgy1g0zx32lkjfj30ts0bnmx3.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://manylu.com/">
+  <link rel="canonical" href="http://manylu.com/2019/03/12/hexo添加多级分类/">
 
 
 
@@ -125,7 +129,7 @@
   };
 </script>
 
-  <title>DewSpace</title>
+  <title>hexo添加多级分类 | DewSpace</title>
   
 
 
@@ -173,8 +177,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -216,7 +219,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -355,9 +358,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -389,10 +392,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/12/hexo添加多级分类/" class="post-title-link" itemprop="url">hexo添加多级分类</a>
+          <h1 class="post-title" itemprop="name headline">hexo添加多级分类
+
               
             
           </h1>
@@ -474,9 +475,7 @@
       
 
       
-        
-          
-            <h2 id="需求说明"><a href="#需求说明" class="headerlink" title="需求说明"></a>需求说明</h2><p>在写文章的时候，我总是不知道该怎么给文章分类或者贴标签，特别纠结，比如我并不想后面所有跟js有关的文章都在一个js类别下，后期如果文章多了的话感觉会很混乱，学习记录和案例练习我希望能够分类清晰，想要达到下面多级分类的效果：</p>
+        <h2 id="需求说明"><a href="#需求说明" class="headerlink" title="需求说明"></a>需求说明</h2><p>在写文章的时候，我总是不知道该怎么给文章分类或者贴标签，特别纠结，比如我并不想后面所有跟js有关的文章都在一个js类别下，后期如果文章多了的话感觉会很混乱，学习记录和案例练习我希望能够分类清晰，想要达到下面多级分类的效果：</p>
 <ul>
 <li>笔记<ul>
 <li>javascript<ul>
@@ -513,8 +512,6 @@
 <p>分类页面已经达到想要的效果了， 但是侧边栏我们并不想要这样…猜测应该是修改侧边栏分类显示的结构之后分类页面就自动对应修改，所以直接修改样式使在侧边栏分类不显示，在主题文件夹下为sources/css/_custom/_custom/custom.styl文件添加代码：</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.sidebar</span> .cat_list</span><br><span class="line">	<span class="attribute">display</span> none</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
 
@@ -537,219 +534,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://manylu.com/2019/03/12/实例对象与new命令/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="胖漏漏">
-      <meta itemprop="description" content="前端 学习记录">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DewSpace">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/12/实例对象与new命令/" class="post-title-link" itemprop="url">实例对象与new命令</a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2019/03/12/实例对象与new命令/" rel="next" title="实例对象与new命令">
+                <i class="fa fa-chevron-left"></i> 实例对象与new命令
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-12 10:16:22 / 修改时间：12:07:13" itemprop="dateCreated datePublished" datetime="2019-03-12T10:16:22+08:00">2019-03-12</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/笔记/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/笔记/javascript/" itemprop="url" rel="index"><span itemprop="name">javascript</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/笔记/javascript/面向对象编程/" itemprop="url" rel="index"><span itemprop="name">面向对象编程</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p><em>笔记只是我学习时候的一些记录和整理，方便加深记忆和回顾，来源：<a href="https://wangdoc.com/javascript/oop/new.html" target="_blank" rel="noopener">阮一峰javascript教程</a></em></p>
-<hr>
-<h2 id="对象是什么"><a href="#对象是什么" class="headerlink" title="对象是什么"></a>对象是什么</h2><ul>
-<li>对象是单个实物的抽象</li>
-<li>对象是一个容器，封装了属性(property)和方法(method)</li>
-</ul>
-<h2 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h2><p>构造函数(constructor)是对象的模板，描述实例对象的基本结构，是专门用来生成实例对象的函数。</p>
-<p>构造函数的特点：</p>
-<ul>
-<li>函数体内部使用this关键字，代表了所要生成的对象实例</li>
-<li>生成对象时，必须使用new命令</li>
-</ul>
-<p>构造函数解释：构造函数的目的就是操作一个空对象（即this对象），将其“构造”为需要的样子。</p>
-<h2 id="new命令"><a href="#new命令" class="headerlink" title="new命令"></a>new命令</h2><p>new命令的作用：执行构造函数，返回一个实例对象。</p>
-<p>使用场景：</p>
-<ul>
-<li>在构造函数内，若return后跟着一个对象,new命令会返回return指定的对象，若return后不是一个对象，则返回this对象。</li>
-<li>普通函数（内部没有this关键字）使用new会返回一个空对象。</li>
-</ul>
-<p>new命令的原理：</p>
-<ol>
-<li>创建一个空对象，作为将要返回的对象实例</li>
-<li>将这个空对象的原型，指向构造函数的prototype属性</li>
-<li>将这个空对象赋值给函数内部的this关键字</li>
-<li>开始执行构造函数内部的代码</li>
-</ol>
-<p>new.target：判断函数调用时是否使用new命令</p>
-<ul>
-<li>是，new.target指向当前函数</li>
-<li>不是，为undefined</li>
-</ul>
-<h2 id="Object-create-创建实例对象"><a href="#Object-create-创建实例对象" class="headerlink" title="Object.create()创建实例对象"></a>Object.create()创建实例对象</h2><p>以现有对象作为模板，生成新的实例对象</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> pig1 = &#123;</span><br><span class="line">    name: <span class="string">"小花"</span>,</span><br><span class="line">    age: <span class="string">"1"</span>,</span><br><span class="line">    greeting: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Hi~ I'm "</span> + <span class="keyword">this</span>.name +<span class="string">"."</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> pig2 = <span class="built_in">Object</span>.create(pig1);</span><br><span class="line">pig2.name  <span class="comment">//"小花"</span></span><br><span class="line">pig2.greeting() <span class="comment">//"Hi~ I'm 小花."</span></span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -759,14 +565,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -786,8 +593,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -854,6 +670,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求说明"><span class="nav-number">1.</span> <span class="nav-text">需求说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方法"><span class="nav-number">2.</span> <span class="nav-text">解决方法</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -985,6 +818,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -1000,6 +837,8 @@
 
   
 
+
+  
 
 
   
